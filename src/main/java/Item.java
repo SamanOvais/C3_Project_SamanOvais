@@ -6,7 +6,7 @@ public class Item {
         this.name = name;
         this.price = price;
     }
-
+    //get name
     public String getName() {
         return name;
     }
