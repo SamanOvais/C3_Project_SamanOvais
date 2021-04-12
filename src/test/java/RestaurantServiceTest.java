@@ -25,6 +25,7 @@ class RestaurantServiceTest {
         restaurant.addToMenu("Vegetable lasagne", 269);
     }
 
+    //search existing restaurant
     @Test
     public void searching_for_existing_restaurant_should_return_expected_restaurant_object() throws restaurantNotFoundException {
 
@@ -40,7 +41,7 @@ class RestaurantServiceTest {
             service.findRestaurantByName("Non Existing Restaurant");
         });
     }
-
+    //remove restaurant from list
     @Test
     public void remove_restaurant_should_reduce_list_of_restaurants_size_by_1() throws restaurantNotFoundException {
         int initialNumberOfRestaurants = service.getRestaurants().size();

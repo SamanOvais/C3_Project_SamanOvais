@@ -5,7 +5,6 @@ import java.util.List;
 public class RestaurantService {
     private static final List<Restaurant> restaurants = new ArrayList<>();
 
-    //Find the Restaurant by its Name
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException {
         for (Restaurant restaurant : restaurants) {
             if (restaurant.getName().equalsIgnoreCase(restaurantName))
